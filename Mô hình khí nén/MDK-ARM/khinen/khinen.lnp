@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"khinen\startup_stm32f205xx.o"
+"khinen\main.o"
+"khinen\stm32f2xx_it.o"
+"khinen\stm32f2xx_hal_msp.o"
+"khinen\stm32f2xx_hal_tim.o"
+"khinen\stm32f2xx_hal_tim_ex.o"
+"khinen\stm32f2xx_hal_uart.o"
+"khinen\stm32f2xx_hal.o"
+"khinen\stm32f2xx_hal_rcc.o"
+"khinen\stm32f2xx_hal_rcc_ex.o"
+"khinen\stm32f2xx_hal_cortex.o"
+"khinen\stm32f2xx_hal_flash.o"
+"khinen\stm32f2xx_hal_flash_ex.o"
+"khinen\stm32f2xx_hal_pwr.o"
+"khinen\stm32f2xx_hal_pwr_ex.o"
+"khinen\stm32f2xx_hal_gpio.o"
+"khinen\stm32f2xx_hal_dma.o"
+"khinen\stm32f2xx_hal_dma_ex.o"
+"khinen\stm32f2xx_hal_exti.o"
+"khinen\system_stm32f2xx.o"
+--strict --scatter "khinen\khinen.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "khinen.map" -o khinen\khinen.axf
